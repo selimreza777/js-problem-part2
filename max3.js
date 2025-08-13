@@ -42,3 +42,13 @@ function maxBiggerIs(kim, lim, dip) {
 const maxBig = maxBiggerIs(115, 16, 99);
 console.log(maxBig);
 
+
+//------short cut max
+const max =Math.max(12,20,25,99,200,2000);
+console.log('max number Math.max is:', max);
+
+/// array []thakle ...spread use kora lage
+const number= [1,4,5, 343,33,3345,34353,333333,999999];
+const maxNum = Math.max(...number);
+console.log('max numb is use ...spread:',maxNum);
+

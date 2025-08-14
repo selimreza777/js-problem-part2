@@ -36,7 +36,7 @@ const price = getPrice(5);
 
 function getSecond(number) {
   // এটা চেক করছে 'number' আসলে Array কিনা (true বা false রিটার্ন করবে)
-  console.log(Array.isArray(number)); //Array.isArray(number) → চেক করে number আসলেই অ্যারে কি না।
+  // console.log(Array.isArray(number)); //Array.isArray(number) → চেক করে number আসলেই অ্যারে কি না।
 
   // Array এর ২য় আইটেম (index 1) বের করছে
   const second = number[1];
@@ -44,4 +44,15 @@ function getSecond(number) {
 }
 // ফাংশন কল করলাম [54, 55, 45] দিয়ে
 const second = getSecond([54, 55, 45]);
-console.log(second);
+// console.log(second);
+
+// check arry || number.length (2)
+function arryCheck(numbers) {
+  if (Array.isArray(numbers) === false) {
+    return 'is not array';
+  }
+  const second = numbers[1];
+  return second;
+}
+const second1 = arryCheck([25,45,11]);
+console.log(second1);
